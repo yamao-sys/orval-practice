@@ -1,2 +1,6 @@
 # orval-practice
 Orvalの検証
+
+REST APIのアプリケーションでReactでOpenAPIからのAPIクライアントと型生成でopenapi-typescript, openapi-fetchを使用していたが、手動で作成する範囲が広くて悩ましいと思っていたため、別の自動生成ライブラリを検証してみたい。
+
+Tanstack Queryとの相性の良さを活かせるらしいのでOrvalを検証
