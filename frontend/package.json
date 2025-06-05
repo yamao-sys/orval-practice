@@ -7,11 +7,13 @@
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
-    "gen:schema": "cd api-spec && npx tsp compile . && node patch.mjs && cd .."
+    "gen:schema": "cd api-spec && npx tsp compile . && node patch.mjs && cd ..",
+    "gen:client": "orval --config orval.config.ts"
   },
   "dependencies": {
     "@react-router/node": "^7.5.3",
     "@react-router/serve": "^7.5.3",
+    "@tanstack/react-query": "^5.80.6",
     "isbot": "^5.1.27",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -23,6 +25,7 @@
     "@types/node": "^20",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
+    "orval": "^7.9.0",
     "tailwindcss": "^4.1.4",
     "typescript": "^5.8.3",
     "vite": "^6.3.3",
